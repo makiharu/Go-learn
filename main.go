@@ -61,4 +61,10 @@ func main() {
 		day = "土"
 	}
 	fmt.Println((day))
+
+
+	// for
+	for i:=0; i < 10; i++ {
+		fmt.Println((i));
+	}
 }
