@@ -62,9 +62,25 @@ func main() {
 	}
 	fmt.Println((day))
 
-
-	// for
-	for i:=0; i < 10; i++ {
-		fmt.Println((i));
+	for i:=0; i < 100; i++ {
+		if(i%15==0) {
+			fmt.Println("FizzBuzz");
+			} else if(i%3==0) {
+			fmt.Println("Fizz");
+			} else if(i % 5 ==0){
+				fmt.Println("Buzz");
+		} else {
+			fmt.Println((i));
+		}
 	}
+
+	var weight float32 = 48.0;
+	var height float32 = 1.530;
+
+	result = getBmi(weight, height);
+	fmt.Println((result))
+}
+
+func getBmi(val1 float32, val2 float32) float32{
+	return val1 / (val2 * val2);
 }
