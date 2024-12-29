@@ -79,6 +79,14 @@ func main() {
 
 	result = getBmi(weight, height);
 	fmt.Println((result))
+
+	// 配列
+	scores := [3]int{2, 3, 5};
+	for i, score := range scores {
+		fmt.Println((i))
+		fmt.Println((score))
+	} 
+
 }
 
 func getBmi(val1 float32, val2 float32) float32{
